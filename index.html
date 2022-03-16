@@ -4,8 +4,22 @@
 <head>
  <link href='./node_modules/bootstrap/dist/css/bootstrap.min.css'rel='stylesheet' type='text/css'>
  <link href="./node_modules/bootstrap/scss/bootstrap.scss"  rel='stylesheet' type='text/css'>
- <link href="./node_modules/bootstrap/scss/_variables.scss" rel='stylesheet' type='text/css'>
+ <link href="./node_modules/bootstrap/scss/_variables.scss" rel='stylesheet' type='text/x-css'>
 </head>
+<style>
+  .row{
+    height: 200px;
+  }
+  .h-100 {
+  height: 80% !important;
+}
+img{
+  width: 300px;
+  height: 200px;
+  object-fit: fill;
+}
+  
+</style>
 <body class="bg-body">
 <!-- Header-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded-bottom rounded-3 border-bottom-0">
@@ -56,25 +70,37 @@
   <!-- End of Header-->
        
 <!--Body-->
-<div class="row w-100">
-  <div class="col bg-secondary">
-    <div class="row">
-      <div class="col">
-        .col-md-8
+<div class="row w-100" style="width: 600px ; height:500px ; padding: 0 300px 0px 300px">
+  <div class="col">
+    <div class="row ">
+      <div class="col bg-secondary" > 
+        <img src="./images/istockphoto-1331042722-170667a.jpg"/> 
+        dsa
       </div>
-    <div class="col">
-      .col-md-8
+    <div class="col bg-danger" style="margin: 0 0 0 20px;"">
+      ads
+      <!-- <img src="./images/panda-1236875__480.jpg"/> -->
     </div>
   </div>
-    <div class="row">
-      <div class="col bg-secondary">.col-md-4</div>
-      <div class="col bg-secondary">.col-md-4</div>
-      <div class="col bg-secondary">.col-md-4</div>
+    <div class="row" style="padding-top: 20px;">
+      <div class="col bg-dark" >
+        das
+        <!-- <img src="./images/panda-3555554__340.jpg"/> -->
+      </div>
+      <div class="col bg-primary" style="margin: 0 0 0 20px;">
+        fas
+        <!-- <img src="./images/panda-g08b815a74_1920.jpg"/> -->
+      </div>
+      <div class="col bg-info " style="margin: 0 0 0 20px;">
+        das
+        <!-- <img src="./images/panda-g5e65010a0_1920.jpg"/> -->
+      </div>
     </div>
   </div>
-  <div class="col bg-info">.col-md-4</div>
+  <div class="col bg-info h-100" style="max-width: 100px; margin: 0 0 0 20px;">.col-md-4</div>
 </div>
 <!-- End of body-->
+
  <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
 

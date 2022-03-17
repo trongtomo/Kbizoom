@@ -7,22 +7,19 @@
  <link href="./node_modules/bootstrap/scss/_variables.scss" rel='stylesheet' type='text/x-css'>
 </head>
 <style>
-  .row{
-    height: 200px;
-  }
-  .h-100 {
-  height: 77% !important;
-}
+  
 .nav-item{
   position: relative;
   left: 100px;
 }
 img{
-  width: 300px;
-  height: 180px;
+  height: 100%;
+  width: 100%;
   object-fit: fill;
-  border-radius: 5%;
-  box-shadow: 1px 5px;
+}
+#search{
+  position: relative;
+  right:  100px;
 }
 #search::after{
   top: 6px;
@@ -52,17 +49,6 @@ img{
 <!-- Header-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded-bottom rounded-3 border-bottom-0">
   <div class="container text-white ">
-    <!-- <div class="row">
-      <div class="col">
-        Logo
-      </div>
-      <div class="col">
-        Home
-      </div>
-      <div class="col">
-        Search
-      </div>
-    </div> -->
         <a class="navbar-brand" href="#">KBizoom</a>
         <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -97,29 +83,31 @@ img{
   <!-- End of Header-->
        
 <!--Body-->
-<div class="row w-100 position-absolute" style="width: 600px ; height:500px ; padding: 0 300px 0px 300px">
-  <div class="col">
+<div class="row w-100 position-relative" >
+  <div class="col position-relative" style=" left: 330px">
     <div class="row ">
-      <div class="col" > 
-        <img src="./images/istockphoto-1331042722-170667a.jpg" style="width:465px"/> 
+      <div class="col-md-3" > 
+        <img class="rounded mx-auto d-block" src="./images/istockphoto-1331042722-170667a.jpg"/> 
       </div>
-    <div class="col">
-       <img src="./images/panda-1236875__480.jpg" style="width:465px"/> 
+    <div class="col-md-3">
+       <img class="rounded mx-auto d-block" src="./images/panda-1236875__480.jpg"/> 
     </div>    
   </div>
-    <div class="row" style="top: 20px;">
-      <div class="col" >
-      <img src="./images/panda-3555554__340.jpg"/> 
+    <div class="row position-relative" style="top: 20px;">
+      <div class="col-md-2" >
+      <img class="rounded mx-auto d-block" src="./images/panda-3555554__340.jpg"/> 
       </div>
-      <div class="col" ">
-<img src="./images/panda-g08b815a74_1920.jpg"/> 
+      <div class="col-md-2" ">
+<img class="rounded mx-auto d-block" src="./images/panda-g08b815a74_1920.jpg"/> 
       </div>
-      <div class="col" ">
-<img src="./images/panda-g5e65010a0_1920.jpg"/> 
+      <div class="col-md-2">
+<img class="rounded mx-auto d-block" src="./images/panda-g5e65010a0_1920.jpg"/> 
       </div>
     </div>
   </div>
-  <div class="col bg-info h-100" style="max-width: 300px;">Sale</div>
+  <div class="col-md-2 position-relative" style="right: 450px;">
+    <img class="rounded mx-auto d-block" src="./images/istockphoto-1331042722-170667a.jpg"/>
+  </div>
 </div>
 <!-- End of body-->
 

@@ -1,0 +1,37 @@
+.nav-item {
+  position: relative;
+  left: 100px; }
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill; }
+
+#search {
+  position: relative;
+  right: 100px; }
+
+#search::after {
+  top: 6px;
+  right: 50px;
+  background-size: 25px;
+  content: "";
+  background-image: url(../images/external-content.duckduckgo.com.jpg);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 30px;
+  position: relative; }
+
+.nav-item:after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 100%;
+  border-bottom: solid 3px #019fb6;
+  transition: left 250ms ease-in-out, right 250ms ease-in-out;
+  opacity: 0; }
+
+.nav-item:hover:after {
+  opacity: 1; }
+
+/*# sourceMappingURL=index.css.map */

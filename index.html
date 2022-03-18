@@ -5,53 +5,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="./node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
+ <link  href="css/index.css" rel="stylesheet"  type="text/css">
  <link href='./node_modules/bootstrap/dist/css/bootstrap.min.css'rel='stylesheet' type='text/css'>
  <link href="./node_modules/bootstrap/scss/bootstrap.scss"  rel='stylesheet' type='text/css'>
- <link href="./node_modules/bootstrap/scss/_variables.scss" rel='stylesheet' type='text/x-css'>
+ <link href="./node_modules/bootstrap/scss/_variables.scss" rel='stylesheet' type='text/css'>
 </head>
-<style>
-  
-.nav-item{
-  position: relative;
-  left: 100px;
-}
-img{
-  height: 100%;
-  width: 100%;
-  object-fit: fill;
-}
-#search{
-  position: relative;
-  right:  100px;
-}
-#search::after{
-  top: 6px;
-  right: 50px;
-  background-size: 25px;
-  content: "";
-  background-image: url(images/external-content.duckduckgo.com.jpg);
-  background-repeat: no-repeat;
-  width: 80px;
-  height: 30px;
-  position: relative;
-}
-.nav-item:after{
-  position: absolute;
-  content: '';
-  height: 16px;
-  width: 100%;
-  border-bottom: solid 3px #019fb6;
-  transition: left 250ms ease-in-out, right 250ms ease-in-out;
-  opacity: 0;
-}
-.nav-item:hover:after{
-  opacity: 1;
-}
-</style>
 <body class="bg-body">
 <!-- Header-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded-bottom rounded-3 border-bottom-0">
+<header>
   <div class="container text-white ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded-bottom rounded-3 border-bottom-0">
         <a class="navbar-brand" href="#">KBizoom</a>
         <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -81,11 +45,11 @@ img{
             <input class="form-control me-2"type="search" placeholder="Search..." aria-label="Search" style="border-radius: 300px; border-style: solid 10px;border-color: purple;">
           </form>
         </div>
+      </nav>
   </div>
-</nav>
+</header>
   <!-- End of Header-->
-       
-<!--Body-->
+<main>
 <div class="row w-100" >
   <div class="col position-relative" style=" left: 330px">
     <div class="row ">
@@ -112,11 +76,16 @@ img{
     <img class="rounded mx-auto d-block" src="./images/istockphoto-1331042722-170667a.jpg"/>
   </div>
 </div>
+</main>
 <!-- End of body-->
-
+<footer>
+</footer>
+<!-- Footer-->
+<!-- End of Footer-->
+</body>
  <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
-
 </html>
 
 

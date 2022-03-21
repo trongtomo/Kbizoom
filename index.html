@@ -1,97 +1,214 @@
-
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
- <link href="./node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
- <link  href="css/index.css" rel="stylesheet"  type="text/css">
- <link href='./node_modules/bootstrap/dist/css/bootstrap.min.css'rel='stylesheet' type='text/css'>
- <link href="./node_modules/bootstrap/scss/bootstrap.scss"  rel='stylesheet' type='text/css'>
- <link href="./node_modules/bootstrap/scss/_variables.scss" rel='stylesheet' type='text/css'>
-</head>
-<body class="bg-body">
-<!-- Header-->
-<header>
-  <div class="container  ">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded-bottom rounded-3 border-bottom-0">
-        <a class="navbar-brand" href="#">KBizoom</a>
-        <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item position-relative">
-              <a class="nav-link active text-primary fw-bolder" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item position-relative">
-              <a class="nav-link disabled fw-normal" href="#">News</a>
-            </li>
-            <li class="nav-item position-relative">
-              <a class="nav-link disabled fw-normal" href="#">Netizen</a>
-            </li>
-            <li class="nav-item position-relative">
-              <a class="nav-link disabled fw-normal" href="#">Quiz</a>
-            </li>
-            <li class="nav-item position-relative">
-              <a class="nav-link disabled fw-normal" href="#">Videos</a>
-            </li>
-            <li class="nav-item position-relative">
-              <a class="nav-link disabled fw-normal" href="#">Photo</a>
-            </li>
-            <li class="nav-item position-relative">
-              <a class="nav-link disabled fw-normal" href="#">Poll</a>
-            </li>
-          </ul>
-          <form class="d-flex" id="search">
-            <input class="form-control me-2"type="search" placeholder="Search..." aria-label="Search" style="border-radius: 300px; border-style: solid 10px;border-color: purple;">
-          </form>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./node_modules/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./node_modules/bootstrap/scss/bootstrap.scss"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./node_modules/bootstrap/scss/_variables.scss"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .swiper {
+        width: 800px;
+        height: 200px;
+        right: 230px;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .container_swiper {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body class="bg-body">
+    <!-- Header-->
+    <header>
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded-bottom rounded-3 border-bottom-0"
+        >
+          <a class="navbar-brand" href="#">KBizoom</a>
+          <div
+            class="collapse navbar-collapse position-relative"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item position-relative">
+                <a
+                  class="nav-link active text-primary fw-bolder"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link disabled fw-normal" href="#">News</a>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link disabled fw-normal" href="#">Netizen</a>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link disabled fw-normal" href="#">Quiz</a>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link disabled fw-normal" href="#">Videos</a>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link disabled fw-normal" href="#">Photo</a>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link disabled fw-normal" href="#">Poll</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+                style="
+                  border-radius: 300px;
+                  border-style: solid 10px;
+                  border-color: purple;
+                "
+              />
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End of Header-->
+    <main>
+      <div class="row w-100">
+        <div class="col position-relative" style="left: 330px">
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                class="rounded mx-auto d-block"
+                src="./images/istockphoto-1331042722-170667a.jpg"
+              />
+            </div>
+            <div class="col-md-3">
+              <img
+                class="rounded mx-auto d-block"
+                src="./images/panda-1236875__480.jpg"
+              />
+            </div>
+          </div>
         </div>
-      </nav>
-  </div>
-</header>
-  <!-- End of Header-->
-<main>
-<div class="row w-100" >
-  <div class="col position-relative" style=" left: 330px">
-    <div class="row ">
-      <div class="col-md-3" > 
-        <img class="rounded mx-auto d-block" src="./images/istockphoto-1331042722-170667a.jpg"/> 
+        <div class="col-md-2 position-relative" style="right: 450px">
+          <img
+            class="rounded mx-auto d-block"
+            src="./images/istockphoto-1331042722-170667a.jpg"
+          />
+        </div>
+        <!--End of Banner-->
       </div>
-    <div class="col-md-3">
-       <img class="rounded mx-auto d-block" src="./images/panda-1236875__480.jpg"/> 
-    </div>    
-  </div>
-  <!--3 Block-->
-    <div class="row position-relative" style="top: 20px;">
-      <div class="col-md-2" >
-      <img class="rounded mx-auto d-block" src="./images/panda-3555554__340.jpg"/> 
+
+      <!--3 Block-->
+      <div class="container_swiper">
+        <div class="swiper mySwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper" style="top: 20px">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                class="rounded mx-auto d-block"
+                src="./images/panda-3555554__340.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="rounded mx-auto d-block"
+                src="./images/panda-g08b815a74_1920.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="rounded mx-auto d-block"
+                src="./images/panda-g5e65010a0_1920.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="rounded mx-auto d-block"
+                src="./images/panda-3555554__340.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="rounded mx-auto d-block"
+                src="./images/panda-g08b815a74_1920.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="rounded mx-auto d-block"
+                src="./images/panda-g5e65010a0_1920.jpg"
+              />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!--End of 3 block-->
+        </div>
       </div>
-      <div class="col-md-2" ">
-<img class="rounded mx-auto d-block" src="./images/panda-g08b815a74_1920.jpg"/> 
-      </div>
-      <div class="col-md-2">
-<img class="rounded mx-auto d-block" src="./images/panda-g5e65010a0_1920.jpg"/> 
-      </div>
-    </div>
-
-
-
-</div>
-  </div>
-  <div class="col-md-2 position-relative" style="right: 450px;">
-    <img class="rounded mx-auto d-block" src="./images/istockphoto-1331042722-170667a.jpg"/>
-  </div>
-</div>
-
-</main>
-<!-- End of body-->
-<footer>
-</footer>
-<!-- Footer-->
-<!-- End of Footer-->
-</body>
- <!-- Option 1: Bootstrap Bundle with Popper -->
- <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
+      <!--Banner-->
+    </main>
+    <!-- End of body-->
+    <footer></footer>
+    <!-- Footer-->
+    <!-- End of Footer-->
+  </body>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </html>
-
-

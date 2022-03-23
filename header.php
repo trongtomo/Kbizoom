@@ -5,12 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>css/style.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/scss/bootstrap.scss.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/scss/_variables.scss" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/swiper.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css"  />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/index.css" type="text/css"  />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/scss/bootstrap.scss.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/scss/_variables.scss" type="text/css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/node_modules/swiper/swiper-bundle.min.css" type="text/css" />
     <?php wp_head();?>
-    
   </head>
   <body class="bg-body">
     <!-- Header-->
@@ -29,9 +31,7 @@
                 <a
                   class="nav-link active text-primary fw-bolder"
                   aria-current="page"
-                  href="#"
-                  >Home</a
-                >
+                  href="#">Home</a>
               </li>
               <li class="nav-item position-relative">
                 <a class="nav-link disabled fw-normal" href="#">News</a>
@@ -71,4 +71,3 @@
     </header>
     <!-- End of Header-->
     <main>
-     <p>this is Main</p>

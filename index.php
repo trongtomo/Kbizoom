@@ -18,9 +18,14 @@
   </article>
 <?php endwhile; ?> -->
 
+<<<<<<< HEAD
 <div class="row w-100 position-relative" style="left: 330px">
   <!-- Block 1 -->
         <div class="col" >
+=======
+<div class="row w-100">
+        <div class="col position-relative" style="left: 330px">
+>>>>>>> c74b80aa7f3685d6e33389a0bdd0e1668da6941c
           <div class="row">
             <div class="col-md-3">
               <img
@@ -31,11 +36,16 @@
             <div class="col-md-3">
               <img
                 class="rounded mx-auto d-block"
+<<<<<<< HEAD
                 src="<?php echo get_template_directory_uri(); ?>/images/istockphoto-1331042722-170667a.jpg"
+=======
+                src="<?php echo get_template_directory_uri(); ?>/images/panda-1236875__480.jpg"
+>>>>>>> c74b80aa7f3685d6e33389a0bdd0e1668da6941c
               />
             </div>
           </div>
         </div>
+<<<<<<< HEAD
   <!-- End of Block 2 -->
       <!-- Banner -->
         <div class="col-md-2 position-absolute" style ="left: 1000px; height: 550px" >
@@ -43,12 +53,23 @@
             class="rounded mx-auto d-block"
             src="<?php echo get_template_directory_uri(); ?>/images/istockphoto-1331042722-170667a.jpg"
             style="min-height:100%"
+=======
+        <div class="col-md-2 position-relative" style="right: 450px">
+          <img
+            class="rounded mx-auto d-block"
+            src="<?php echo get_template_directory_uri(); ?>/images/istockphoto-1331042722-170667a.jpg"
+>>>>>>> c74b80aa7f3685d6e33389a0bdd0e1668da6941c
           />
         </div>
         <!--End of Banner-->
       </div>
+<<<<<<< HEAD
        <!--3 Block-->
        <div class="container_swiper position-relative" style ="right: 150px">
+=======
+      <!--3 Block-->
+      <div class="container_swiper">
+>>>>>>> c74b80aa7f3685d6e33389a0bdd0e1668da6941c
         <div class="swiper mySwiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper" style="top: 20px">
@@ -96,8 +117,12 @@
         </div>
       </div>
       <!--Banner-->
+<<<<<<< HEAD
     <script src="<?php echo get_template_directory_uri(); ?>/node_modules/swiper/swiper-bundle.min.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/swiper.js" type="text/javascript"></script>
+=======
+
+>>>>>>> c74b80aa7f3685d6e33389a0bdd0e1668da6941c
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
